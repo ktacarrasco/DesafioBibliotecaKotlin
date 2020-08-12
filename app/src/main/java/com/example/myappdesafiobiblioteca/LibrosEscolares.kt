@@ -10,6 +10,17 @@ class LibrosEscolares (  val nameBook : String ,
                          val modeBook:  String) {
 
     fun precioFormateado(): String = "\$${this.price}"
+ //   fun ImprimirDatos(nameBook: String, ISBN: String , añoPub : Int, editorial : String ,cantPag: Int ,price : Int,autorBook : String ,modeBook:  String) : String =
+ //       {this.nameBook}
+
+
+
+fun imprimirDatos() : String =
+    "${this.nameBook}"
+
+
+
+
 
 
 }

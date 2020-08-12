@@ -7,73 +7,80 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textViewanio"
+        android:layout_width="224dp"
+        android:layout_height="50dp"
+        android:text="Año Publicación"
+        app:layout_constraintStart_toStartOf="@+id/textViewAutor"
+        app:layout_constraintTop_toBottomOf="@+id/namebook" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="81dp"
+        android:layout_marginTop="29dp"
+        android:text="Imprimir"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTipo"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTipo" />
+
+    <TextView
+        android:id="@+id/textViewISBN"
+        android:layout_width="238dp"
+        android:layout_height="50dp"
+        android:text="ISBN"
+        app:layout_constraintStart_toStartOf="@+id/textViewTipo"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPrecio" />
+
+    <TextView
+        android:id="@+id/textViewPrecio"
+        android:layout_width="234dp"
+        android:layout_height="50dp"
+        android:text="Precio"
+        app:layout_constraintStart_toStartOf="@+id/textViewISBN"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEdito" />
+
+    <TextView
         android:id="@+id/namebook"
         android:layout_width="266dp"
-        android:layout_height="28dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="16dp"
         android:text="Nombre Libro!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.418"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.058" />
+        app:layout_constraintStart_toStartOf="@+id/textViewaño"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="238dp"
-        android:layout_height="32dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="90dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="223dp"
-        android:layout_height="30dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="137dp" />
-
-    <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textViewEdito"
         android:layout_width="243dp"
-        android:layout_height="37dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="192dp" />
+        android:layout_height="50dp"
+        android:text="Editorial"
+        app:layout_constraintStart_toStartOf="@+id/textViewPrecio"
+        app:layout_constraintTop_toBottomOf="@+id/textViewcantpag" />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="234dp"
-        android:layout_height="46dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="62dp"
-        tools:layout_editor_absoluteY="412dp" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="234dp"
-        android:layout_height="48dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="493dp" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="226dp"
-        android:layout_height="35dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="62dp"
-        tools:layout_editor_absoluteY="565dp" />
-
-    <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/textViewTipo"
         android:layout_width="214dp"
-        android:layout_height="45dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.47"
-        tools:layout_editor_absoluteX="62dp" />
+        android:layout_height="50dp"
+        android:text="Tipo de Libro"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/textViewISBN" />
+
+    <TextView
+        android:id="@+id/textViewcantpag"
+        android:layout_width="234dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:text="Cantidad de Paginas"
+        app:layout_constraintStart_toStartOf="@+id/textViewEdito"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAutor" />
+
+    <TextView
+        android:id="@+id/textViewAutor"
+        android:layout_width="227dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:text="Autor del Libro"
+        app:layout_constraintStart_toStartOf="@+id/textViewcantpag"
+        app:layout_constraintTop_toBottomOf="@+id/textViewaño" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
